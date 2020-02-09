@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sanathbhardwaj.servicevalleydhanbad">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logomain"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logomain"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+        <activity android:name=".OTP" />
+        <activity android:name=".Login" />
+        <activity android:name=".OrderConfirmation" />
+        <activity android:name=".TrackOrder" />
+        <activity android:name=".LoginSignUp" />
+        <activity android:name=".Payment" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".ProductsDisplay" />
+        <activity android:name=".category" />
+        <activity
+            android:name=".GpsSelector"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".GoogleApi.CurrentLocation" />
+        <activity android:name=".Authentication.PhoneVerification" />
+        <activity android:name=".Authentication.PhoneEntry" />
+        <activity android:name=".AllServices.Vegetables" />
+        <activity android:name=".HelpCentre" />
+        <activity android:name=".AllServices.services" />
+        <activity android:name=".bottom_nav_activities.AccountActivity" />
+        <activity android:name=".bottom_nav_activities.SVPartnerActivity" />
+        <activity android:name=".bottom_nav_activities.SearchActivity" />
+        <activity android:name=".GoogleApi.LocationEnable" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

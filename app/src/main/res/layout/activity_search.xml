@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bottom_nav_activities.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_txt_background">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:layout_toRightOf="@id/s"
+            android:layout_centerVertical="true"
+            android:hint="Search store"/>
+
+        <ImageView
+            android:id="@+id/s"
+            android:layout_marginStart="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view_menu"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_main"
+        app:labelVisibilityMode="labeled"
+        android:background="@color/white"
+        app:itemBackground="@color/white"
+        app:itemIconSize="20dp"/>
+
+</RelativeLayout>

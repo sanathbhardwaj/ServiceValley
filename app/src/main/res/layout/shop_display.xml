@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_gravity="start"
+    android:layout_marginEnd="1dp"
+    app:cardCornerRadius="3dp">
+
+    <LinearLayout
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:weightSum="4.0">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rename"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4.0">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5">
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3.0">
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Service Valley"
+                        android:fontFamily="@font/bold_normal"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/shop_slogan"
+                        android:layout_below="@id/shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The grocery expert"
+                        android:fontFamily="@font/regular"
+                        android:layout_marginStart="20dp"/>
+                    <View
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/shop_slogan"
+                        android:id="@+id/shadow_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/dropshadow"/>
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_below="@id/shadow_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="6.0">
+
+                        <TextView
+                            android:fontFamily="@font/regular"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3.8"
+                            android:layout_weight="1.0"/>
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/star"
+                            android:layout_weight="1.0"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/distant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1.0"/>
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/deliverybike"
+                            android:layout_weight="1.0"
+                            android:foregroundGravity="center"/>
+
+                        <TextView
+                            android:fontFamily="@font/regular"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="33 min"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1.0"/>
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/alarmclock"
+                            android:layout_weight="1.0"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5">
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/display"
+        android:background="@drawable/dropshadow" />
+</RelativeLayout>

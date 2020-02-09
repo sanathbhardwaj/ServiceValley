@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/product_img"
+        android:orientation="horizontal"
+        android:weightSum="3.0"
+        android:baselineAligned="false">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/name"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aashirvaad Select 10kg whole wheat atta"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/name"
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:layout_gravity="center_vertical">
+
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:text="Add  +"
+                android:textSize="11sp"
+                android:background="@drawable/edit_txt_background"
+                android:textColor="@color/colorPrimaryDark"/>
+            <LinearLayout
+                android:id="@+id/add_sub"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:text="Add"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:weightSum="3.0"
+                android:background="@drawable/edit_txt_background">
+                <TextView
+                    android:id="@+id/reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:textSize="18sp"
+                    android:text="-"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:background="@drawable/edit_txt_background"/>
+                <TextView
+                    android:id="@+id/increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

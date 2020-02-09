@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductsDisplay">
+
+    <LinearLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:showDividers="middle"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/back"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""
+            android:fontFamily="@font/bold_normal"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <View
+        android:layout_below="@id/appbar"
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dropshadow" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/appbar"/>
+
+    <RelativeLayout
+        android:id="@+id/go_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Go to cart"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/no_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 items"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_toRightOf="@id/no_items"
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/priceCounter"
+            android:layout_toRightOf="@id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

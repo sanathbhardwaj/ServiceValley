@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Service Valley</string>
+    <string name="terms_and_conditions_and_privacy_policy">By continuing. I confirm that i have read and agree to the <b>\nTerms and conditions</b> and <b>Privacy policy</b></string>
+    <string name="Hi">Hi there, \nWelcome to \nService Valley</string>
+</resources>
